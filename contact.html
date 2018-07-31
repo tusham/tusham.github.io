@@ -1,786 +1,883 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
+		<meta name="description"/>
+		<meta name="author"/>
+		<link rel="shortcut icon" href="favicon.html"/>
+		<title>
+			AlphaPlusMedicos PVT. LTD.
+		</title>
+		<link href="bootstrap3/css/bootstrap.css" rel="stylesheet"/>
+
+		<!-- main css -->
+		<link href="css/master.css" rel="stylesheet"/>
+
+		<!-- mobile css -->
+		<link href="css/responsive.css" rel="stylesheet"/>
+
+		<!-- FontAwesome Support -->
+		<link rel="stylesheet" type="text/css" href="css/fontawesome/font-awesome.min.css"/>
+		<!-- FontAwesome Support -->
+
+		<!-- Superfish menu -->
+		<link rel="stylesheet" type="text/css" href="css/superfish/superfish.css"/>
+		<!-- Superfish menu -->
+
+		<!-- Theme Color selector -->
+		<link href="js/theme-color-selector/theme-color-selector.css" type="text/css" rel="stylesheet"/>
+		<!-- Theme Color selector -->
+
+		<!-- Owl Carousel -->
+		<link rel="stylesheet" type="text/css" href="js/owl-carousel/owl.carousel.css"/>
+		<!-- Owl Carousel -->
+
+		<!-- Typicons -->
+		<link rel="stylesheet" type="text/css" href="css/typicons/typicons.min.css"/>
+		<!-- Typicons -->
+
+		<!-- WOW animations -->
+		<link rel="stylesheet" type="text/css" href="js/wow/css/libs/animate.css"/>
+		<!-- WOW animations -->
+
+		<!-- Pulse Slider -->
+		<link rel="stylesheet" type="text/css" href="js/pulse/pm-slider.css"/>
+		<!-- Pulse Slider -->
+
+		<!-- MeanMenu (mobile) -->
+		<link rel="stylesheet" type="text/css" href="js/meanmenu/meanmenu.css"/>
+		<!-- MeanMenu (mobile) -->
+
+		<!-- Flexslider -->
+		<link rel="stylesheet" type="text/css" href="js/flexslider/flexslider-post.css"/>
+		<!-- Flexslider -->
+
+		<!-- PrettyPhoto -->
+		<link rel="stylesheet" type="text/css" href="js/prettyphoto/css/prettyPhoto.css"/>
+		<!-- PrettyPhoto -->
+
+		<!-- jQuery UI -->
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui/jquery-ui.css"/>
+
+		<!-- bxSlider CSS file -->
+		<link href="css/jquery.bxslider.css" rel="stylesheet"/>
+
+		<!-- jQuery UI -->
+
+		<!-- Development Google Fonts -->
+		<link
+			href="http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic%7COpen+Sans+Condensed:300,300italic,700%7CRaleway:400,200,300,100,600,500,700,800,900%7COswald:400,300,700%7CRoboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic%7CRoboto+Condensed:400,300,300italic,400italic,700,700italic%7CRoboto+Slab:400,100,300,700%7CLato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic"
+			rel="stylesheet"
+			type="text/css"/>
+		<!-- Development Google Fonts -->
+
+	</head>
+
+	<body>
+		<form name="form1" method="post" action="http://alphaplusmedicos/contact.html" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+			<div>
+				<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value=""/>
+				<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value=""/>
+				<input
+					type="hidden"
+					name="__VIEWSTATE"
+					id="__VIEWSTATE"
+					value="/wEPDwULLTEzODIwNzI5OTQPZBYCZg9kFgICAw9kFgYCAQ9kFgQCAQ8WAh4EVGV4dAXVATxkaXYgY2xhc3M9ImNvbC1tZC02IGxlZnQtb25lIj48cD48c3Ryb25nPkFkZHJlc3M6PC9zdHJvbmc+IEJLUlMgUEhBUk1BIFBWVC4gTFRELjxiciAvPg0KNDIxLCA0dGggRmxvb3IsIFRvd2VyLUIsIFNwYXplZGdlIENvbW1lcmNpYWwgQ29tcGxleDxiciAvPg0KU2VjdG9yLTQ3LCBTb2huYSBSb2FkIEd1cmdhb24tMTIyMDAyIChIYXJ5YW5hKSBJbmRpYTwvcD4NCjwvZGl2PmQCAw8WAh8ABYICPGRpdiBjbGFzcz0iY29sLW1kLTYgbGVmdC1vbmUiPjxwPjxzdHJvbmc+UGhvbmU6PC9zdHJvbmc+ICs5MS0xMjQgNDI3IDY0MjE8L3A+DQoNCjxwPjxzdHJvbmc+TW9iaWxlOjwvc3Ryb25nPiArOTEtOTk3MTU5MDgxMiwgKzkxLTk4OTE4NDY2ODc8L3A+DQoNCjxwPjxzdHJvbmc+RW1haWw6PC9zdHJvbmc+IGJrcnNwaGFybWFAZ21haWwuY29tPC9wPg0KDQo8cD48c3Ryb25nPldlYjo8L3N0cm9uZz4gd3d3LmJrcnNwaGFybWEuY29tPC9wPg0KPC9kaXY+ZAIDDxYCHwAF9QM8cD48c3Ryb25nPkJLUlMgUEhBUk1BIFBWVC4gTFRELjwvc3Ryb25nPiBpcyBoaWdobHkgcHJvZ3Jlc3NpdmUgaGVhbHRoIE1hbmFnZW1lbnQgQ29tcGFueSBpbnZvbHZlZCBpbiBtYW51ZmFjdHVyaW5nIGFuZCBtYXJrZXRpbmcgb2YgYnJhbmRlZCBhbmQgZ2VuZXJpYyBwaGFybWFjZXV0aWNhbCBmb3JtdWxhdGlvbnMuIFRoZSBwcm9kdWN0IHBvcnRmb2xpbyBpbmNsdWRlcyBoaWdobHkgaW5ub3ZhdGl2ZSBwcmVzY3JpcHRpb24gZHJ1Z3MgaW4gdmFyaW91cyB0aGVyYXBldXRpYyBhcmVhcy4gQktSUyBpcyBjdXJyZW50bHkgZXhwb3J0aW5nIHRvIFJ1c3NpYSAmYW1wOyBDSVMgY291bnRyaWVzLiBOdW1iZXJzIG9mIGRvc3NpZXJzIGFyZSBpbiBwaXBlIGxpbmUgYXdhaXRpbmcgcmVnaXN0cmF0aW9ucyBpbiBTb3V0aCBFYXN0IEFzaWEsIEFmcmljYW4gJmFtcDsgTGF0aW4gQW1lcmljYW4gY291bnRyaWVzLiA8YSBocmVmPSJwcm9maWxlLmFzcHgiPlZpZXcgTW9yZTwvYT48L3A+DQpkAgUPFgIfAAX0BDx1bCBjbGFzcz0icG0tZ2VuZXJhbC1pY29uLWxpc3QiPg0KCTxsaT48c3BhbiBjbGFzcz0iZmEgZmEtaG9tZSBwbS1nZW5lcmFsLWljb24iPjwvc3Bhbj4NCgk8cD48c3Ryb25nPkJLUlMgUEhBUk1BIFBWVC4gTFRELjwvc3Ryb25nPjxiciAvPg0KCTQyMSwgNHRoIEZsb29yLCBUb3dlci1CLCBTcGF6ZWRnZSBDb21tZXJjaWFsIENvbXBsZXgsIFNlY3Rvci00NywgU29obmEgUm9hZCBHdXJnYW9uIC0gMTIyMDAyIChIYXJ5YW5hKSBJbmRpYTwvcD4NCgk8L2xpPg0KCTxsaT4NCjxzcGFuIGNsYXNzPSJmYSBmYS1tb2JpbGUtcGhvbmUgcG0tZ2VuZXJhbC1pY29uIj48L3NwYW4+CTxwPis5MS0xMjQgNDI3IDY0MjE8YnIgLz4NCgkrOTEtOTk3MTU5MDgxMiAsICs5MTk4OTE4NDY2ODc8L3A+DQoJPC9saT4NCgk8bGk+CTxzcGFuIGNsYXNzPSJmYSBmYS1pbmJveCBwbS1nZW5lcmFsLWljb24iPjwvc3Bhbj4NCgk8cD48YSBocmVmPSJqYXZhc2NyaXB0OnZvaWQoMCk7Ij5ia3JzcGhhcm1hQGdtYWlsLmNvbTwvYT48L3A+DQoJPC9saT4NCgk8bGk+DQoJPHNwYW4gY2xhc3M9ImZhIGZhLWdsb2JlIHBtLWdlbmVyYWwtaWNvbiI+PC9zcGFuPgk8cD53d3cuYmtyc3BoYXJtYS5jb208L3A+DQoJPC9saT4NCjwvdWw+DQpkZLO/YWDPbi/h0p1CGR5FG5yY2jdLghqb7GtgqqMsZKaS"/>
+			</div>
+
+			<script type="text/javascript">
+				//<![CDATA[
+				var theForm = document.forms['form1'];
+				if (!theForm) {
+					theForm = document.form1;
+				}
+
+				function __doPostBack(eventTarget, eventArgument) {
+					if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+						theForm.__EVENTTARGET.value = eventTarget;
+						theForm.__EVENTARGUMENT.value = eventArgument;
+						theForm.submit();
+					}
+				}
+
+				//]]>
+			</script>
+
+			<script src="WebResource5ce0.js?d=BpfEpz0-g5KpwWs5k3c2uycOyIiiQkvWxJxjbCRpFUWKxDMfWzoO_Afe4JYsC7aPljnl8fi_IrkVjlLFISm7nnxN6vUcti237vVzHfT0fnw1&amp;t=636475870140000000" type="text/javascript"></script>
+
+			<script src="WebResource0279.js?d=0j6pW0RuGa46wHvG7b5aMEIt2g63GHoF5KZQeiLyzWaTpTQVXwx-hHoMktZgkyiRuoNQRDhgLcri6oxeYf6twupqkdEFQ5TbxUSa7dsvGzI1&amp;t=636475870140000000" type="text/javascript"></script>
+			<script type="text/javascript">
+				//<![CDATA[
+				function WebForm_OnSubmit() {
+					if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false)
+						return false;
+					return true;
+				}
+
+				//]]>
+			</script>
+
+			<div>
+
+				<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CD2448B2"/>
+			</div>
+
+			<div id="pm_theme_color_selector">
+				<a class="pm_theme_color_selector_btn">
+					<i class="typcn typcn-cog"></i>
+				</a>
+				<p class="pm_theme_color_selector_title">Style Sampler</p>
+
+				<div class="pm_theme_color_selector_container">
+					<p>Layout Style</p>
+					<select name="pm_theme_color_selector_mode" id="pm_theme_color_selector_mode">
+						<option value="pm-full-mode" selected="selected">Fullscreen</option>
+						<option value="pm-boxed-mode">Boxed Mode</option>
+					</select>
+				</div>
+				<div class="pm_theme_color_selector_container">
+					<p>Patterns for Boxed Mode</p>
+					<ul class="pm_theme_img_selector" id="pm_theme_pattern_selector">
+						<!--<li><a href="javascript:void(0);" id="pattern1-lg"><img src="img/boxed-patterns/pattern1.png" alt="pattern1"></a></li>-->
+						<!--<li><a href="javascript:void(0);" id="pattern2-lg"><img src="img/boxed-patterns/pattern2.png" alt="pattern2"></a></li>-->
+						<li>
+							<a href="javascript:void(0);" id="pattern3-lg"><img src="img/boxed-patterns/pattern3.png" alt="pattern3"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" id="pattern4"><img src="img/boxed-patterns/pattern4.png" alt="pattern4"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" id="pattern5"><img src="img/boxed-patterns/pattern5.png" alt="pattern5"></a>
+						</li>
+						<li>
+							<a href="javascript:void(0);" id="pattern6"><img src="img/boxed-patterns/pattern6.png" alt="pattern6"></a>
+						</li>
+					</ul>
+				</div>
+
+				<!--<div class="pm_theme_color_selector_container"> <p>Backgrounds for Boxed Mode</p> <ul class="pm_theme_img_selector" id="pm_theme_background_selector"> <li><a href="javascript:void(0);" id="1a"><img src="img/boxed-bgs/1.jpg" alt="bg1"></a></li>
+				<li><a href="javascript:void(0);" id="2a"><img src="img/boxed-bgs/2.jpg" alt="bg2"></a></li> <li><a href="javascript:void(0);" id="3a"><img src="img/boxed-bgs/3.jpg" alt="bg3"></a></li> <li><a href="javascript:void(0);" id="4a"><img
+				src="img/boxed-bgs/4.jpg" alt="bg4"></a></li> <li><a href="javascript:void(0);" id="5a"><img src="img/boxed-bgs/5.jpg" alt="bg5"></a></li> </ul> </div>-->
+
+			</div>
+			<!-- Theme color selector -->
+
+			<div id="pm_layout_wrapper" class="pm-full-mode">
+				<!-- Use wrapper for wide or boxed mode -->
+
+				<!-- Sub-Menu -->
+				<div class="pm-sub-menu-container">
+
+					<div class="container">
+
+						<div class="row">
+
+							<div class="col-lg-6 col-md-6 col-sm-12">
+
+								<div class="pm-sub-menu-info">
+
+									<ul class="pm-micro-navigation">
+										<li>
+											<a>WELCOME TO AlphaPlusMedicos PVT. LTD.</a>
+										</li>
+									</ul>
+
+								</div>
+
+							</div>
+
+							<div class="col-lg-6 col-md-6 col-sm-12">
+
+								<ul class="pm-social-navigation">
+									<!--<li class="pm_tip_static_bottom" title="Twitter"><a href="javascript:void(0);" class="fa fa-twitter"></a></li>-->
+									<li class="pm_tip_static_bottom" title="Facebook">
+										<a href="https://www.facebook.com/pages/AlphaPlusMedicos" target="_blank" class="fa fa-facebook"></a>
+									</li>
+									<!--<li class="pm_tip_static_bottom" title="Google Plus"><a href="javascript:void(0);" class="fa fa-google-plus"></a></li> <li class="pm_tip_static_bottom" title="Linkedin"><a href="javascript:void(0);" class="fa fa-linkedin"></a></li> <li
+									class="pm_tip_static_bottom" title="YouTube"><a href="javascript:void(0);" class="fa fa-youtube"></a></li>-->
+								</ul>
+							</div>
 
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" /><meta name="description" /><meta name="author" /><link rel="shortcut icon" href="favicon.html" /><title>
-	AlphaPlusMedicos  PVT. LTD.
-</title><link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
-
-    <!-- main css -->
-    <link href="css/master.css" rel="stylesheet" />
-
-    <!-- mobile css -->
-    <link href="css/responsive.css" rel="stylesheet" />
-
-    <!-- FontAwesome Support -->
-    <link rel="stylesheet" type="text/css" href="css/fontawesome/font-awesome.min.css" />
-    <!-- FontAwesome Support -->
-
-    <!-- Superfish menu -->
-    <link rel="stylesheet" type="text/css" href="css/superfish/superfish.css" />
-    <!-- Superfish menu -->
-
-    <!-- Theme Color selector -->
-    <link href="js/theme-color-selector/theme-color-selector.css" type="text/css" rel="stylesheet" />
-    <!-- Theme Color selector -->
-
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" type="text/css" href="js/owl-carousel/owl.carousel.css" />
-    <!-- Owl Carousel -->
-
-    <!-- Typicons -->
-    <link rel="stylesheet" type="text/css" href="css/typicons/typicons.min.css" />
-    <!-- Typicons -->
-
-    <!-- WOW animations -->
-    <link rel="stylesheet" type="text/css" href="js/wow/css/libs/animate.css" />
-    <!-- WOW animations -->
-
-    <!-- Pulse Slider -->
-    <link rel="stylesheet" type="text/css" href="js/pulse/pm-slider.css" />
-    <!-- Pulse Slider -->
-
-    <!-- MeanMenu (mobile) -->
-    <link rel="stylesheet" type="text/css" href="js/meanmenu/meanmenu.css" />
-    <!-- MeanMenu (mobile) -->
-
-    <!-- Flexslider -->
-    <link rel="stylesheet" type="text/css" href="js/flexslider/flexslider-post.css" />
-    <!-- Flexslider -->
-
-    <!-- PrettyPhoto -->
-    <link rel="stylesheet" type="text/css" href="js/prettyphoto/css/prettyPhoto.css" />
-    <!-- PrettyPhoto -->
-
-    <!-- jQuery UI -->
-    <link rel="stylesheet" type="text/css" href="css/jquery-ui/jquery-ui.css" />
-
-    	<!-- bxSlider CSS file -->
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />
-
-    <!-- jQuery UI -->
-
-    <!-- Development Google Fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic%7COpen+Sans+Condensed:300,300italic,700%7CRaleway:400,200,300,100,600,500,700,800,900%7COswald:400,300,700%7CRoboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic%7CRoboto+Condensed:400,300,300italic,400italic,700,700italic%7CRoboto+Slab:400,100,300,700%7CLato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css" />
-    <!-- Development Google Fonts -->
-
-</head>
-<body>
-    <form name="form1" method="post" action="http://alphaplusmedicos/contact.html" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
-<div>
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEzODIwNzI5OTQPZBYCZg9kFgICAw9kFgYCAQ9kFgQCAQ8WAh4EVGV4dAXVATxkaXYgY2xhc3M9ImNvbC1tZC02IGxlZnQtb25lIj48cD48c3Ryb25nPkFkZHJlc3M6PC9zdHJvbmc+IEJLUlMgUEhBUk1BIFBWVC4gTFRELjxiciAvPg0KNDIxLCA0dGggRmxvb3IsIFRvd2VyLUIsIFNwYXplZGdlIENvbW1lcmNpYWwgQ29tcGxleDxiciAvPg0KU2VjdG9yLTQ3LCBTb2huYSBSb2FkIEd1cmdhb24tMTIyMDAyIChIYXJ5YW5hKSBJbmRpYTwvcD4NCjwvZGl2PmQCAw8WAh8ABYICPGRpdiBjbGFzcz0iY29sLW1kLTYgbGVmdC1vbmUiPjxwPjxzdHJvbmc+UGhvbmU6PC9zdHJvbmc+ICs5MS0xMjQgNDI3IDY0MjE8L3A+DQoNCjxwPjxzdHJvbmc+TW9iaWxlOjwvc3Ryb25nPiArOTEtOTk3MTU5MDgxMiwgKzkxLTk4OTE4NDY2ODc8L3A+DQoNCjxwPjxzdHJvbmc+RW1haWw6PC9zdHJvbmc+IGJrcnNwaGFybWFAZ21haWwuY29tPC9wPg0KDQo8cD48c3Ryb25nPldlYjo8L3N0cm9uZz4gd3d3LmJrcnNwaGFybWEuY29tPC9wPg0KPC9kaXY+ZAIDDxYCHwAF9QM8cD48c3Ryb25nPkJLUlMgUEhBUk1BIFBWVC4gTFRELjwvc3Ryb25nPiBpcyBoaWdobHkgcHJvZ3Jlc3NpdmUgaGVhbHRoIE1hbmFnZW1lbnQgQ29tcGFueSBpbnZvbHZlZCBpbiBtYW51ZmFjdHVyaW5nIGFuZCBtYXJrZXRpbmcgb2YgYnJhbmRlZCBhbmQgZ2VuZXJpYyBwaGFybWFjZXV0aWNhbCBmb3JtdWxhdGlvbnMuIFRoZSBwcm9kdWN0IHBvcnRmb2xpbyBpbmNsdWRlcyBoaWdobHkgaW5ub3ZhdGl2ZSBwcmVzY3JpcHRpb24gZHJ1Z3MgaW4gdmFyaW91cyB0aGVyYXBldXRpYyBhcmVhcy4gQktSUyBpcyBjdXJyZW50bHkgZXhwb3J0aW5nIHRvIFJ1c3NpYSAmYW1wOyBDSVMgY291bnRyaWVzLiBOdW1iZXJzIG9mIGRvc3NpZXJzIGFyZSBpbiBwaXBlIGxpbmUgYXdhaXRpbmcgcmVnaXN0cmF0aW9ucyBpbiBTb3V0aCBFYXN0IEFzaWEsIEFmcmljYW4gJmFtcDsgTGF0aW4gQW1lcmljYW4gY291bnRyaWVzLiA8YSBocmVmPSJwcm9maWxlLmFzcHgiPlZpZXcgTW9yZTwvYT48L3A+DQpkAgUPFgIfAAX0BDx1bCBjbGFzcz0icG0tZ2VuZXJhbC1pY29uLWxpc3QiPg0KCTxsaT48c3BhbiBjbGFzcz0iZmEgZmEtaG9tZSBwbS1nZW5lcmFsLWljb24iPjwvc3Bhbj4NCgk8cD48c3Ryb25nPkJLUlMgUEhBUk1BIFBWVC4gTFRELjwvc3Ryb25nPjxiciAvPg0KCTQyMSwgNHRoIEZsb29yLCBUb3dlci1CLCBTcGF6ZWRnZSBDb21tZXJjaWFsIENvbXBsZXgsIFNlY3Rvci00NywgU29obmEgUm9hZCBHdXJnYW9uIC0gMTIyMDAyIChIYXJ5YW5hKSBJbmRpYTwvcD4NCgk8L2xpPg0KCTxsaT4NCjxzcGFuIGNsYXNzPSJmYSBmYS1tb2JpbGUtcGhvbmUgcG0tZ2VuZXJhbC1pY29uIj48L3NwYW4+CTxwPis5MS0xMjQgNDI3IDY0MjE8YnIgLz4NCgkrOTEtOTk3MTU5MDgxMiAsICs5MTk4OTE4NDY2ODc8L3A+DQoJPC9saT4NCgk8bGk+CTxzcGFuIGNsYXNzPSJmYSBmYS1pbmJveCBwbS1nZW5lcmFsLWljb24iPjwvc3Bhbj4NCgk8cD48YSBocmVmPSJqYXZhc2NyaXB0OnZvaWQoMCk7Ij5ia3JzcGhhcm1hQGdtYWlsLmNvbTwvYT48L3A+DQoJPC9saT4NCgk8bGk+DQoJPHNwYW4gY2xhc3M9ImZhIGZhLWdsb2JlIHBtLWdlbmVyYWwtaWNvbiI+PC9zcGFuPgk8cD53d3cuYmtyc3BoYXJtYS5jb208L3A+DQoJPC9saT4NCjwvdWw+DQpkZLO/YWDPbi/h0p1CGR5FG5yY2jdLghqb7GtgqqMsZKaS" />
-</div>
-
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['form1'];
-if (!theForm) {
-    theForm = document.form1;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
-
-
-<script src="WebResource5ce0.js?d=BpfEpz0-g5KpwWs5k3c2uycOyIiiQkvWxJxjbCRpFUWKxDMfWzoO_Afe4JYsC7aPljnl8fi_IrkVjlLFISm7nnxN6vUcti237vVzHfT0fnw1&amp;t=636475870140000000" type="text/javascript"></script>
-
-
-<script src="WebResource0279.js?d=0j6pW0RuGa46wHvG7b5aMEIt2g63GHoF5KZQeiLyzWaTpTQVXwx-hHoMktZgkyiRuoNQRDhgLcri6oxeYf6twupqkdEFQ5TbxUSa7dsvGzI1&amp;t=636475870140000000" type="text/javascript"></script>
-<script type="text/javascript">
-//<![CDATA[
-function WebForm_OnSubmit() {
-if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
-return true;
-}
-//]]>
-</script>
-
-<div>
-
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CD2448B2" />
-</div>
-
-      <div id="pm_theme_color_selector">
-        <a class="pm_theme_color_selector_btn"><i class="typcn typcn-cog"></i></a>
-        <p class="pm_theme_color_selector_title">Style Sampler</p>
-
-        <div class="pm_theme_color_selector_container">
-        	<p>Layout Style</p>
-        	<select name="pm_theme_color_selector_mode" id="pm_theme_color_selector_mode">
-        	  <option value="pm-full-mode" selected>Fullscreen</option>
-              <option value="pm-boxed-mode">Boxed Mode</option>
-        	</select>
-        </div>
-        <div class="pm_theme_color_selector_container">
-        	<p>Patterns for Boxed Mode</p>
-        	<ul class="pm_theme_img_selector" id="pm_theme_pattern_selector">
-                <!--<li><a href="javascript:void(0);" id="pattern1-lg"><img src="img/boxed-patterns/pattern1.png" alt="pattern1"></a></li>-->
-                <!--<li><a href="javascript:void(0);" id="pattern2-lg"><img src="img/boxed-patterns/pattern2.png" alt="pattern2"></a></li>-->
-                <li><a href="javascript:void(0);" id="pattern3-lg"><img src="img/boxed-patterns/pattern3.png" alt="pattern3"></a></li>
-                <li><a href="javascript:void(0);" id="pattern4"><img src="img/boxed-patterns/pattern4.png" alt="pattern4"></a></li>
-                <li><a href="javascript:void(0);" id="pattern5"><img src="img/boxed-patterns/pattern5.png" alt="pattern5"></a></li>
-                <li><a href="javascript:void(0);" id="pattern6"><img src="img/boxed-patterns/pattern6.png" alt="pattern6"></a></li>
-            </ul>
-        </div>
-
-        <!--<div class="pm_theme_color_selector_container">
-        	<p>Backgrounds for Boxed Mode</p>
-        	<ul class="pm_theme_img_selector" id="pm_theme_background_selector">
-                <li><a href="javascript:void(0);" id="1a"><img src="img/boxed-bgs/1.jpg" alt="bg1"></a></li>
-                <li><a href="javascript:void(0);" id="2a"><img src="img/boxed-bgs/2.jpg" alt="bg2"></a></li>
-                <li><a href="javascript:void(0);" id="3a"><img src="img/boxed-bgs/3.jpg" alt="bg3"></a></li>
-                <li><a href="javascript:void(0);" id="4a"><img src="img/boxed-bgs/4.jpg" alt="bg4"></a></li>
-                <li><a href="javascript:void(0);" id="5a"><img src="img/boxed-bgs/5.jpg" alt="bg5"></a></li>
-            </ul>
-        </div>-->
-
-    </div>
-    <!-- Theme color selector -->
-
-
-	<div id="pm_layout_wrapper" class="pm-full-mode"><!-- Use wrapper for wide or boxed mode -->
-
-    	<!-- Sub-Menu -->
-    	<div class="pm-sub-menu-container">
-
-        	<div class="container">
-
-            	<div class="row">
-
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-
-                        <div class="pm-sub-menu-info">
-
-                            <ul class="pm-micro-navigation">
-                            	<li><a >WELCOME TO AlphaPlusMedicos PVT. LTD.</a></li>
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-
-                    	<ul class="pm-social-navigation">
-                        	<!--<li class="pm_tip_static_bottom" title="Twitter"><a href="javascript:void(0);" class="fa fa-twitter"></a></li>-->
-                            <li class="pm_tip_static_bottom" title="Facebook"><a href="https://www.facebook.com/pages/AlphaPlusMedicos" target="_blank" class="fa fa-facebook"></a></li>
-                            <!--<li class="pm_tip_static_bottom" title="Google Plus"><a href="javascript:void(0);" class="fa fa-google-plus"></a></li>
-                            <li class="pm_tip_static_bottom" title="Linkedin"><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                            <li class="pm_tip_static_bottom" title="YouTube"><a href="javascript:void(0);" class="fa fa-youtube"></a></li>-->
-                        </ul>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-        <!-- /Sub-header -->
-
-
-
-    	<!-- Header area -->
-        <header>
-
-        	<div class="container">
-
-            	<div class="row">
-
-                	<div class="col-lg-12 col-md-12 col-sm-12">
-                    	<center>
-                    	 <div class="pm-header-logo-container" style="width:100%;">
-                            <a href="index.html" style="display: inherit;"><img src="img/medical-link.jpg" class="img-responsive pm-header-logo" alt="logo"></a>
-							<img src="img/home/slide-logo.gif" style="width: 95px;float: right; margin-top:5px;" />
-                        </div>
-                        </center>
-                    </div>
-                </div>
-
-            </div>
-
-        </header>
-        <!-- /Header area end -->
-
-        <!-- Navigation area -->
-        <div class="pm-nav-container" style="position:inherit;">
-
-        	<div class="container">
-
-                <div class="row">
-
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-
-                        <nav class="navbar-collapse collapse" id="pm-main-navigation">
-
-                            <ul class="sf-menu pm-nav">
-
-                        		<li><a href="index.html" class="fa fa-home" id="pm-home-btn"> &nbsp; Home</a></li>
-                                <li><a href="profile.html">Profile</a></li>
-                                <li><a href="product-list.html">Product List</a></li>
-                                <li><a href="top-selling-product.html">Top Selling Products</a></li>
-                                <li><a href="globally-placed-in-countries.html">Globally placed in countries</a></li>
-                                <li><a href="board-of-director.html">Board of Directors</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-
-                            </ul>
-
-                        </nav>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    <div>
-
-
-
-<div class="pm-sub-header-container">
-
-        	<div class="pm-sub-header-info">
-
-                <div class="container">
-                	<div class="row">
-                    	<div class="col-lg-12">
-
-                            <p class="pm-page-title">Contact Us</p>
-                            <p class="pm-page-message">Have a question? Our friendly staff is here to help</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="pm-sub-header-breadcrumbs">
-
-                <div class="container">
-                	<div class="row">
-                    	<div class="col-lg-12">
-
-                            <ul class="pm-breadcrumbs">
-                            	<li><a href="index.html">Home </a></li>
-                                <li><i class="fa fa-angle-right"></i></li>
-                                <li>Contact Us</li>
-                            </ul>
-
-                            <!--<ul class="pm-post-navigation">
-                            	<li class="pm_tip_static_top" title="Prev. Post"><a href="#" class="fa fa-angle-left"></a></li>
-                                <li class="pm_tip_static_top" title="Next Post"><a href="#" class="fa fa-angle-right"></a></li>
-                            </ul>-->
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-         <div class="container pm-containerPadding-top-80 pm-containerPadding-bottom-50">
-
-        	<div class="row">
-            	<div class="col-lg-12 pm-columnPadding30 pm-center">
-
-                    <h5>Get in touch with us</h5>
-
-
-
-                    <div class="pm-column-title-divider">
-                    	<img height="29" width="29" src="img/divider-icon.png" alt="icon">
-                    </div>
-
-
-
-
-
-                     <div class="col-md-6 left-one"><p><strong>Address:</strong> AlphaPlusMedicos PVT. LTD.<br />
-Office, RUSSIA<br />
-<strong>Phone:</strong> +7-910-160-0002</p>
-<p><strong>Mobile:</strong> +7-910-160-0002, +7-903-039-3991</p>
-<p><strong>Email:</strong> alphaplusmedicos@mail.ru</p>
-<p><strong>Web:</strong> www.AlphaPlusMedicos.com</p>
-</div>
-<!--<br />-->
-
-<!--
-<div class="col-md-6 left-one"><p><strong>Phone:</strong> +7-910-160-0002</p>
-
-<p><strong>Mobile:</strong> +7-910-160-0002, +7-903-039-3991</p>
-
-<p><strong>Email:</strong> alphaplusmedicos@mail.ru</p>
-
-<p><strong>Web:</strong> www.AlphaPlusMedicos.com</p>
-</div>
--->
-
-
-<!--Cutom Address-->
-
-<div class="col-md-6 left-one"><p><strong>Address:</strong> AlphaPlusMedicos PVT. LTD .<br />
-    Plot No. AL5/J Sector-56, Growth Centre<br />
-    IIE Sidcul Sigaddi, Kotdwar-246165, (Uttarakhand) India</p>
-		<p><strong>Phone:</strong> +91-00-000-0001</p>
-		<p><strong>Mobile:</strong> +91-00-000-0002, +91-000-000-0003</p>
-		<p><strong>Email:</strong> info@lphaplusmedicos@mail.com</p>
-		<p><strong>Web:</strong> www.AlphaPlusMedicos.com</p>
-		</div>
-	</div>
-
-	<!--Cutom Address-->
-
-
-
-
-
-
-
-
-
-                  <!--  <br/>
-                    <div class="col-md-6 left-one"><p><strong>Phone:</strong> +7-910-160-0002</p>
-
-<p><strong>Mobile:</strong> +7-910-160-0002, +7-903-039-3991</p>
-
-<p><strong>Email:</strong> alphaplusmedicos@mail.ru</p>
-
-<p><strong>Web:</strong> www.AlphaPlusMedicos.com</p>
-</div> -->
-
-
-                </div>
-            </div>
-
-
-        </div>
-        <div class="container pm-containerPadding110">
-
-        	<div class="row">
-            	<div class="col-lg-12 pm-center pm-column-spacing">
-                	<h5>Contact us by Form</h5>
-                    <div class="pm-column-title-divider">
-                    	<img height="29" width="29" src="img/divider-icon.png" alt="icon">
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-
-                	<form action="#" method="post" id="pm-contact-form">
-
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-
-
-                           <input name="ctl00$ContentPlaceHolder1$txt_name" type="text" id="ContentPlaceHolder1_txt_name" class="pm-form-textfield" placeholder="First Name" />
-
-                            <span id="ContentPlaceHolder1_RequiredFieldValidator2" style="color:Red;display:none;">*</span>
-
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-
-
-                             <input name="ctl00$ContentPlaceHolder1$txt_last_name" type="text" id="ContentPlaceHolder1_txt_last_name" class="pm-form-textfield" placeholder="Last Name" />
-
- <span id="ContentPlaceHolder1_RequiredFieldValidator1" style="color:Red;display:none;">*</span>
-
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-
-
-                            <input name="ctl00$ContentPlaceHolder1$txt_email_address" type="text" id="ContentPlaceHolder1_txt_email_address" class="pm-form-textfield" placeholder="Email Address" Display="Dynamic" />
-
-
-                            <span id="ContentPlaceHolder1_RequiredFieldValidator5" style="color:Red;display:none;">*</span>
-
-                                 <span id="ContentPlaceHolder1_RegularExpressionValidator1" style="color:Red;display:none;">Invalid Email Address. !!!</span>
-
-
-
-
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-
-
-
-                             <input name="ctl00$ContentPlaceHolder1$txt_phone_number" type="text" id="ContentPlaceHolder1_txt_phone_number" class="pm-form-textfield" placeholder="Phone Number" />
-
-                              <span id="ContentPlaceHolder1_RequiredFieldValidator4" style="color:Red;display:none;">*</span>
-
-   <span id="ContentPlaceHolder1_RegularExpressionValidator4" style="color:Red;display:none;">Please Enter 10 digits valid mobile number</span>
-
-                        </div>
-
-                        <div class="col-lg-12">
-
-
-                         <textarea name="ctl00$ContentPlaceHolder1$txt_description" rows="2" cols="20" id="ContentPlaceHolder1_txt_description" class="pm-form-textarea" placeholder="Message" style="height:160px;width:1141px;">
-</textarea>
-
-                              <span id="ContentPlaceHolder1_RequiredFieldValidator3" style="color:Red;display:none;">*</span>
-                        </div>
-                        <div class="col-lg-12 pm-center">
-
-
-                            <div id="ContentPlaceHolder1_ValidationSummary1" style="color:Red;display:none;">
-
-</div>
-
-                           <input type="submit" name="ctl00$ContentPlaceHolder1$btn_submit" value="Submit Form" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btn_submit&quot;, &quot;&quot;, true, &quot;gi&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder1_btn_submit" class="pm-form-submit-btn" />
-                            <div id="pm-contact-form-response"></div>
-                            <p class="pm-required">all fields are required</p>
-                        </div>
-
-                        <input type="hidden" name="pm_s_email_address_contact" value="" />
-
-                    </form>
-
-
-                </div>
-
-        </div>
-
-    </div>
-
-
-      <div class="pm-fat-footer pm-parallax-panel" data-stellar-background-ratio="0.5">
-
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-4 col-md-4 col-sm-12 pm-widget-footer">
-
-                    	<h6 class="pm-fat-footer-title"><span>About</span> AlphaPlusMedicos</h6>
-                        <div class="pm-fat-footer-title-divider"></div>
-
-
-                        <p><strong>AlphaPlusMedicos PVT. LTD.</strong> is highly progressive health Management Company involved in manufacturing and marketing of branded and generic pharmaceutical formulations. The product portfolio includes highly innovative prescription drugs in various therapeutic areas. AlphaPlusMedicos is currently exporting to Russia &amp; CIS countries. Numbers of dossiers are in pipe line awaiting registrations in South East Asia, African &amp; Latin American countries. <a href="profile.html">View More</a></p>
-
-
-
-                    </div>
-
-
-                    <div class="col-lg-4 col-md-4 col-sm-12 pm-widget-footer">
-
-                       <h6 class="pm-fat-footer-title"> <span>Get</span> in touch</h6>
-                       <div class="pm-fat-footer-title-divider"></div>
-
-
-                       <ul class="pm-general-icon-list">
-	<li><span class="fa fa-home pm-general-icon"></span>
-	<p><strong>AlphaPlusMedicos PVT. LTD.</strong><br />
-	put your address New Delhi - 110078 (New Delhi) India</p>
-	</li>
-	<li>
-<span class="fa fa-mobile-phone pm-general-icon"></span>	<p>+91-000 000 0000<br />
-	+91-0000000000 , +91-0000000000</p>
-	</li>
-	<li>	<span class="fa fa-inbox pm-general-icon"></span>
-	<p><a href="javascript:void(0);">info@alphaplusmedicos.com</a></p>
-	</li>
-	<li>
-	<span class="fa fa-globe pm-general-icon"></span>	<p>www.alphaplusmedicos.com</p>
-	</li>
-</ul>
-
-
-
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-sm-12 pm-widget-footer">
-
-                        <h6 class="pm-fat-footer-title"><span>Face</span>book</h6>
-                        <div class="pm-fat-footer-title-divider"></div>
-                        <script>
-                            (function (d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0];
-                                if (d.getElementById(id)) return;
-                                js = d.createElement(s); js.id = id;
-                                js.src = "../connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            } (document, 'script', 'facebook-jssdk'));
-                        </script>
-
-						<div class="fb-like-box" data-href="https://www.facebook.com/pages/AlphaPlusMedicos" data-height="300" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 						</div>
 
+					</div>
 
+				</div>
+				<!-- /Sub-header -->
 
-                </div>
-            </div>
+				<!-- Header area -->
+				<header>
 
-        </div>
+					<div class="container">
 
-        <footer style="background:#12131b; border-top:1px solid #313131;">
-        	<div class="container" style="text-align:center;">
-				<p style="color:#fff; margin:0px; padding:5px 0px; font-size:13px;">Copyright © 2015 - All Rights Reserved. Powered by <a href="http://www.alphaplusmedicos.com/" target="_blank">Alpha Plus Medicos PVT Ltd</a></p>
-            </div>
+						<div class="row">
 
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<center>
+									<div class="pm-header-logo-container" style="width:100%;">
+										<a href="index.html" style="display: inherit;"><img src="img/medical-link.jpg" class="img-responsive pm-header-logo" alt="logo"></a>
+										<img src="img/home/slide-logo.gif" style="width: 95px;float: right; margin-top:5px;"/>
+									</div>
+								</center>
+							</div>
+						</div>
 
+					</div>
 
+				</header>
+				<!-- /Header area end -->
 
-        </footer>
+				<!-- Navigation area -->
+				<div class="pm-nav-container" style="position:inherit;">
 
+					<div class="container">
 
+						<div class="row">
 
-    </div><!-- /pm_layout-wrapper -->
+							<div class="col-lg-12 col-md-12 col-sm-12">
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <script src="js/jquery.viewport.mini.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="bootstrap3/js/bootstrap.min.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/owl-carousel/owl.carousel.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/jquery.tooltip.js"></script>
-    <script src="js/superfish/superfish.js"></script>
-    <script src="js/superfish/hoverIntent.js"></script>
-    <script src="js/stellar/jquery.stellar.js"></script>
-    <script src="js/theme-color-selector/theme-color-selector.js"></script>
-    <script src="js/pulse/jquery.PMSlider.js"></script>
-    <script src="js/meanmenu/jquery.meanmenu.min.js"></script>
-    <script src="js/flexslider/jquery.flexslider.js"></script>
-    <script src="js/jquery.testimonials.js"></script>
-    <script src="js/wow/wow.min.js"></script>
-    <script src="js/jquery-migrate-1.2.1.js"></script>
-    <script src="js/prettyphoto/js/jquery.prettyPhoto.js"></script>
-    <script src="js/tinynav.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/ajax-appointment-form/ajax-appointment-form.js"></script>
-    <!--<script src="js/twitterfetch/twitterfetch.js"></script>-->
+								<nav class="navbar-collapse collapse" id="pm-main-navigation">
 
-    <script src="js/jquery.bxslider.min.js"></script>
-    <p id="P1" class="visible-lg visible-md visible-sm"></p>
-    <script>
-        $('.bxslider').bxSlider({
-            auto: true,
-            autoControls: true
-        });
-	</script>
+									<ul class="sf-menu pm-nav">
 
+										<li>
+											<a href="index.html" class="fa fa-home" id="pm-home-btn">
+												&nbsp; Home</a>
+										</li>
+										<li>
+											<a href="profile.html">Profile</a>
+										</li>
+										<li>
+											<a href="product-list.html">Product List</a>
+										</li>
+										<li>
+											<a href="top-selling-product.html">Top Selling Products</a>
+										</li>
+										<li>
+											<a href="globally-placed-in-countries.html">Globally placed in countries</a>
+										</li>
+										<li>
+											<a href="board-of-director.html">Board of Directors</a>
+										</li>
+										<li>
+											<a href="contact.html">Contact Us</a>
+										</li>
 
-     <script>
-    // Define your locations: HTML content for the info window, latitude, longitude
-    var locations = [
-      ['<h6>UZBEKISTAN</h6>', 41.0000, 69.0000],
-      ['<h6>TAJIKISTAN</h6>', 38.5500, 68.8000],
-      ['<h6>TURKMENISTAN</h6>', 37.9667, 58.3333],
-      ['<h6>KYRGYZSTAN</h6>', 42.8667, 74.6000],
-      ['<h6>MONGOLIA</h6>', 46.0000, 105.0000],
-	  ['<h6>RUSSIA</h6>', 60.0000, 90.0000],
-      ['<h6>BELARUS</h6>', 53.9167, 27.5500],
-      ['<h6>KAZAKHSTAN</h6>', 48.0000, 68.0000],
-      ['<h6>ECUADOR</h6>', -0.7320459,-76.3983011],
+									</ul>
 
-	  ['<h6>PERU</h6>', -9.1951786,-74.9904165 ],
-      ['<h6>COSTA RICA</h6>', 9.3592939,-84.0481907],
-      ['<h6>MOZAMBIQUE</h6>', -17.562882,35.472404],
-      ['<h6>ZAMBIA</h6>', -13.140351,27.8541907],
-      ['<h6>BOTSWANA</h6>', -22.342841,24.6871035],
-	  ['<h6>IVORY COAST</h6>', 7.5455351,-5.547545],
-      ['<h6>MYANMAR</h6>', 19.0734474,96.6710399],
-      ['<h6>FIJI</h6>', -17.7478445,178.1486857],
-      ['<h6>PHILIPPINES</h6>', 11.6978351,122.6217543],
-	  ['<h6>CAMBODIA</h6>', 11.9879666,104.9806145]
-    ];
+								</nav>
 
-    // Setup the different icons and shadows
-    var iconURLPrefix = 'http://maps.google.com/mapfiles/ms/icons/';
+							</div>
 
-    var icons = [
-      <!--iconURLPrefix + 'red-dot.png',
-      iconURLPrefix + 'blue-dot.png',
-	  iconURLPrefix + 'blue-dot.png',
-	  iconURLPrefix + 'blue-dot.png',
-	  iconURLPrefix + 'blue-dot.png',
-	  iconURLPrefix + 'blue-dot.png',
-	  iconURLPrefix + 'blue-dot.png',
-	  iconURLPrefix + 'blue-dot.png',
-	  iconURLPrefix + 'blue-dot.png',
-	  iconURLPrefix + 'blue-dot.png',
-	  iconURLPrefix + 'red-dot.png',
-	  iconURLPrefix + 'red-dot.png',
-	  iconURLPrefix + 'red-dot.png',
-	  iconURLPrefix + 'red-dot.png',
-	  iconURLPrefix + 'red-dot.png',
-	  iconURLPrefix + 'red-dot.png',
-	  iconURLPrefix + 'red-dot.png',
-	  iconURLPrefix + 'red-dot.png',
-	  iconURLPrefix + 'red-dot.png',
-	  iconURLPrefix + 'red-dot.png'
-    ]
-    var iconsLength = icons.length;
+						</div>
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 20,
-      center: new google.maps.LatLng(-37.92, 151.25),
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      mapTypeControl: false,
-      streetViewControl: false,
-      panControl: false,
-	  zoomControl: false,
-	  scrollwheel:false,
-	  scaleControl: false,
-      zoomControlOptions: {
-         position: google.maps.ControlPosition.LEFT_BOTTOM
-      }
-    });
+					</div>
 
-    var infowindow = new google.maps.InfoWindow({
-      maxWidth: 200
-    });
+				</div>
+				<div>
 
-    var markers = new Array();
+					<div class="pm-sub-header-container">
 
-    var iconCounter = 0;
+						<div class="pm-sub-header-info">
 
-    // Add the markers and infowindows to the map
-    for (var i = 0; i < locations.length; i++) {
-      var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        map: map,
-        icon: icons[iconCounter]
-      });
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-12">
 
-      markers.push(marker);
+										<p class="pm-page-title">Contact Us</p>
+										<p class="pm-page-message">Have a question? Our friendly staff is here to help</p>
 
-      google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
-          infowindow.setContent(locations[i][0]);
-          infowindow.open(map, marker);
-        }
-      })(marker, i));
+									</div>
+								</div>
+							</div>
 
-      iconCounter++;
-      // We only have a limited number of possible icon colors, so we may have to restart the counter
-      if(iconCounter >= iconsLength) {
-      	iconCounter = 0;
-      }
-    }
+						</div>
 
-    function autoCenter() {
-      //  Create a new viewpoint bound
-      var bounds = new google.maps.LatLngBounds();
-      //  Go through each...
-      for (var i = 0; i < markers.length; i++) {
-				bounds.extend(markers[i].position);
-      }
-      //  Fit these bounds to the map
-      map.fitBounds(bounds);
-    }
-    autoCenter();
-  </script>
+						<div class="pm-sub-header-breadcrumbs">
 
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-12">
 
+										<ul class="pm-breadcrumbs">
+											<li>
+												<a href="index.html">Home
+												</a>
+											</li>
+											<li>
+												<i class="fa fa-angle-right"></i>
+											</li>
+											<li>Contact Us</li>
+										</ul>
 
-    <p id="back-top" class="visible-lg visible-md visible-sm"></p>
+										<!--<ul class="pm-post-navigation"> <li class="pm_tip_static_top" title="Prev. Post"><a href="#" class="fa fa-angle-left"></a></li> <li class="pm_tip_static_top" title="Next Post"><a href="#" class="fa fa-angle-right"></a></li> </ul>-->
 
-<script type="text/javascript">
-//<![CDATA[
-var Page_ValidationSummaries =  new Array(document.getElementById("ContentPlaceHolder1_ValidationSummary1"));
-var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder1_RequiredFieldValidator2"), document.getElementById("ContentPlaceHolder1_RequiredFieldValidator1"), document.getElementById("ContentPlaceHolder1_RequiredFieldValidator5"), document.getElementById("ContentPlaceHolder1_RegularExpressionValidator1"), document.getElementById("ContentPlaceHolder1_RequiredFieldValidator4"), document.getElementById("ContentPlaceHolder1_RegularExpressionValidator4"), document.getElementById("ContentPlaceHolder1_RequiredFieldValidator3"));
-//]]>
-</script>
+									</div>
+								</div>
+							</div>
 
-<script type="text/javascript">
-//<![CDATA[
-var ContentPlaceHolder1_RequiredFieldValidator2 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldValidator2"] : document.getElementById("ContentPlaceHolder1_RequiredFieldValidator2");
-ContentPlaceHolder1_RequiredFieldValidator2.controltovalidate = "ContentPlaceHolder1_txt_name";
-ContentPlaceHolder1_RequiredFieldValidator2.errormessage = "Please Enter First Name!!!";
-ContentPlaceHolder1_RequiredFieldValidator2.display = "Dynamic";
-ContentPlaceHolder1_RequiredFieldValidator2.validationGroup = "gi";
-ContentPlaceHolder1_RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ContentPlaceHolder1_RequiredFieldValidator2.initialvalue = "";
-var ContentPlaceHolder1_RequiredFieldValidator1 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldValidator1"] : document.getElementById("ContentPlaceHolder1_RequiredFieldValidator1");
-ContentPlaceHolder1_RequiredFieldValidator1.controltovalidate = "ContentPlaceHolder1_txt_last_name";
-ContentPlaceHolder1_RequiredFieldValidator1.errormessage = "Please Enter Last Name!!!";
-ContentPlaceHolder1_RequiredFieldValidator1.display = "Dynamic";
-ContentPlaceHolder1_RequiredFieldValidator1.validationGroup = "gi";
-ContentPlaceHolder1_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ContentPlaceHolder1_RequiredFieldValidator1.initialvalue = "";
-var ContentPlaceHolder1_RequiredFieldValidator5 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldValidator5"] : document.getElementById("ContentPlaceHolder1_RequiredFieldValidator5");
-ContentPlaceHolder1_RequiredFieldValidator5.controltovalidate = "ContentPlaceHolder1_txt_email_address";
-ContentPlaceHolder1_RequiredFieldValidator5.errormessage = "Please Enter Email Address!!!";
-ContentPlaceHolder1_RequiredFieldValidator5.display = "Dynamic";
-ContentPlaceHolder1_RequiredFieldValidator5.validationGroup = "gi";
-ContentPlaceHolder1_RequiredFieldValidator5.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ContentPlaceHolder1_RequiredFieldValidator5.initialvalue = "";
-var ContentPlaceHolder1_RegularExpressionValidator1 = document.all ? document.all["ContentPlaceHolder1_RegularExpressionValidator1"] : document.getElementById("ContentPlaceHolder1_RegularExpressionValidator1");
-ContentPlaceHolder1_RegularExpressionValidator1.controltovalidate = "ContentPlaceHolder1_txt_email_address";
-ContentPlaceHolder1_RegularExpressionValidator1.errormessage = "Invalid Email Address. !!!";
-ContentPlaceHolder1_RegularExpressionValidator1.display = "Dynamic";
-ContentPlaceHolder1_RegularExpressionValidator1.validationGroup = "gi";
-ContentPlaceHolder1_RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ContentPlaceHolder1_RegularExpressionValidator1.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
-var ContentPlaceHolder1_RequiredFieldValidator4 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldValidator4"] : document.getElementById("ContentPlaceHolder1_RequiredFieldValidator4");
-ContentPlaceHolder1_RequiredFieldValidator4.controltovalidate = "ContentPlaceHolder1_txt_phone_number";
-ContentPlaceHolder1_RequiredFieldValidator4.errormessage = "Please Enter Phone Number!!!";
-ContentPlaceHolder1_RequiredFieldValidator4.display = "Dynamic";
-ContentPlaceHolder1_RequiredFieldValidator4.validationGroup = "gi";
-ContentPlaceHolder1_RequiredFieldValidator4.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ContentPlaceHolder1_RequiredFieldValidator4.initialvalue = "";
-var ContentPlaceHolder1_RegularExpressionValidator4 = document.all ? document.all["ContentPlaceHolder1_RegularExpressionValidator4"] : document.getElementById("ContentPlaceHolder1_RegularExpressionValidator4");
-ContentPlaceHolder1_RegularExpressionValidator4.controltovalidate = "ContentPlaceHolder1_txt_phone_number";
-ContentPlaceHolder1_RegularExpressionValidator4.errormessage = "Please Enter 10 digits valid mobile number";
-ContentPlaceHolder1_RegularExpressionValidator4.display = "Dynamic";
-ContentPlaceHolder1_RegularExpressionValidator4.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
-ContentPlaceHolder1_RegularExpressionValidator4.validationexpression = "[0-9]{10}";
-var ContentPlaceHolder1_RequiredFieldValidator3 = document.all ? document.all["ContentPlaceHolder1_RequiredFieldValidator3"] : document.getElementById("ContentPlaceHolder1_RequiredFieldValidator3");
-ContentPlaceHolder1_RequiredFieldValidator3.controltovalidate = "ContentPlaceHolder1_txt_description";
-ContentPlaceHolder1_RequiredFieldValidator3.errormessage = "Please Enter Message!!!";
-ContentPlaceHolder1_RequiredFieldValidator3.display = "Dynamic";
-ContentPlaceHolder1_RequiredFieldValidator3.validationGroup = "gi";
-ContentPlaceHolder1_RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
-ContentPlaceHolder1_RequiredFieldValidator3.initialvalue = "";
-var ContentPlaceHolder1_ValidationSummary1 = document.all ? document.all["ContentPlaceHolder1_ValidationSummary1"] : document.getElementById("ContentPlaceHolder1_ValidationSummary1");
-ContentPlaceHolder1_ValidationSummary1.showmessagebox = "True";
-ContentPlaceHolder1_ValidationSummary1.showsummary = "False";
-ContentPlaceHolder1_ValidationSummary1.validationGroup = "gi";
-//]]>
-</script>
+						</div>
 
+					</div>
 
-<script type="text/javascript">
-//<![CDATA[
+					<div class="container pm-containerPadding-top-80 pm-containerPadding-bottom-50">
 
-var Page_ValidationActive = false;
-if (typeof(ValidatorOnLoad) == "function") {
-    ValidatorOnLoad();
-}
+						<div class="row">
+							<div class="col-lg-12 pm-columnPadding30 pm-center">
 
-function ValidatorOnSubmit() {
-    if (Page_ValidationActive) {
-        return ValidatorCommonOnSubmit();
-    }
-    else {
-        return true;
-    }
-}
-        //]]>
-</script>
-</form>
+								<h5>Get in touch with us</h5>
+
+								<div class="pm-column-title-divider">
+									<img height="29" width="29" src="img/divider-icon.png" alt="icon">
+								</div>
+
+								<div class="col-md-6 left-one">
+									<p>
+										<strong>Address:</strong>
+										AlphaPlusMedicos PVT. LTD.
+										<br/>
+										Office, RUSSIA<br/>
+										<strong>Phone:</strong>
+										+7-910-160-0002</p>
+									<p>
+										<strong>Mobile:</strong>
+										+7-910-160-0002, +7-903-039-3991</p>
+									<p>
+										<strong>Email:</strong>
+										alphaplusmedicos@mail.ru</p>
+									<p>
+										<strong>Web:</strong>
+										www.AlphaPlusMedicos.com</p>
+								</div>
+								<!--<br />-->
+
+								<!-- <div class="col-md-6 left-one"><p><strong>Phone:</strong> +7-910-160-0002</p> <p><strong>Mobile:</strong> +7-910-160-0002, +7-903-039-3991</p> <p><strong>Email:</strong> alphaplusmedicos@mail.ru</p> <p><strong>Web:</strong>
+								www.AlphaPlusMedicos.com</p> </div> -->
+
+								<!--Cutom Address-->
+
+								<div class="col-md-6 left-one">
+									<p>
+										<strong>Address:</strong>
+										AlphaPlusMedicos PVT. LTD .<br/>
+										Plot No. AL5/J Sector-56, Growth Centre<br/>
+										IIE Sidcul Sigaddi, Kotdwar-246165, (Uttarakhand) India</p>
+									<!--<p>
+										<strong>Phone:</strong>
+										+91-00-000-0001</p>
+									<p>
+										<strong>Mobile:</strong>
+										+91-00-000-0002, +91-000-000-0003</p>-->
+									<p>
+										<strong>Email:</strong>
+										info@lphaplusmedicos@mail.com</p>
+									<p>
+										<strong>Web:</strong>
+										www.AlphaPlusMedicos.com</p>
+								</div>
+							</div>
+
+							<!--Cutom Address-->
+
+							<!--<br/>-->
+							<div class="col-md-6 left-one">
+								<p>
+									<strong>Address:</strong>
+									AlphaPlusMedicos PVT. LTD .
+									<br/>
+									20, Northcote
+									<br/>
+									Southhall Middlesex, UB12AY
+									<br/>UNITED KINGDOM</p>
+								<p>
+									<strong>Phone:</strong>
+								</p>
+								<p>
+									<strong>Mobile:</strong>
+								</p>
+								<p>
+									<strong>Email:</strong>
+									info@alphaplusmedicos.com</p>
+								<p>
+									<strong>Web:</strong>
+									www.AlphaPlusMedicos.com</p>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+				<div class="container pm-containerPadding110">
+
+					<div class="row">
+						<div class="col-lg-12 pm-center pm-column-spacing">
+							<h5>Contact us by Form</h5>
+							<div class="pm-column-title-divider">
+								<img height="29" width="29" src="img/divider-icon.png" alt="icon">
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+
+						<form action="#" method="post" id="pm-contact-form">
+
+							<div class="col-lg-6 col-md-6 col-sm-12">
+
+								<input name="ctl00$ContentPlaceHolder1$txt_name" type="text" id="ContentPlaceHolder1_txt_name" class="pm-form-textfield" placeholder="First Name"/>
+
+								<span id="ContentPlaceHolder1_RequiredFieldValidator2" style="color:Red;display:none;">*</span>
+
+							</div>
+
+							<div class="col-lg-6 col-md-6 col-sm-12">
+
+								<input name="ctl00$ContentPlaceHolder1$txt_last_name" type="text" id="ContentPlaceHolder1_txt_last_name" class="pm-form-textfield" placeholder="Last Name"/>
+
+								<span id="ContentPlaceHolder1_RequiredFieldValidator1" style="color:Red;display:none;">*</span>
+
+							</div>
+
+							<div class="col-lg-6 col-md-6 col-sm-12">
+
+								<input name="ctl00$ContentPlaceHolder1$txt_email_address" type="text" id="ContentPlaceHolder1_txt_email_address" class="pm-form-textfield" placeholder="Email Address" display="Dynamic"/>
+
+								<span id="ContentPlaceHolder1_RequiredFieldValidator5" style="color:Red;display:none;">*</span>
+
+								<span id="ContentPlaceHolder1_RegularExpressionValidator1" style="color:Red;display:none;">Invalid Email Address. !!!</span>
+
+							</div>
+
+							<div class="col-lg-6 col-md-6 col-sm-12">
+
+								<input name="ctl00$ContentPlaceHolder1$txt_phone_number" type="text" id="ContentPlaceHolder1_txt_phone_number" class="pm-form-textfield" placeholder="Phone Number"/>
+
+								<span id="ContentPlaceHolder1_RequiredFieldValidator4" style="color:Red;display:none;">*</span>
+
+								<span id="ContentPlaceHolder1_RegularExpressionValidator4" style="color:Red;display:none;">Please Enter 10 digits valid mobile number</span>
+
+							</div>
+
+							<div class="col-lg-12">
+
+								<textarea name="ctl00$ContentPlaceHolder1$txt_description" rows="2" cols="20" id="ContentPlaceHolder1_txt_description" class="pm-form-textarea" placeholder="Message" style="height:160px;width:1141px;"></textarea>
+
+								<span id="ContentPlaceHolder1_RequiredFieldValidator3" style="color:Red;display:none;">*</span>
+							</div>
+							<div class="col-lg-12 pm-center">
+
+								<div id="ContentPlaceHolder1_ValidationSummary1" style="color:Red;display:none;"></div>
+
+								<input
+									type="submit"
+									name="ctl00$ContentPlaceHolder1$btn_submit"
+									value="Submit Form"
+									onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$btn_submit&quot;, &quot;&quot;, true, &quot;gi&quot;, &quot;&quot;, false, false))"
+									id="ContentPlaceHolder1_btn_submit"
+									class="pm-form-submit-btn"/>
+								<div id="pm-contact-form-response"></div>
+								<p class="pm-required">all fields are required</p>
+							</div>
+
+							<input type="hidden" name="pm_s_email_address_contact" value=""/>
+
+						</form>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="pm-fat-footer pm-parallax-panel" data-stellar-background-ratio="0.5">
+
+				<div class="container">
+					<div class="row">
+
+						<div class="col-lg-4 col-md-4 col-sm-12 pm-widget-footer">
+
+							<h6 class="pm-fat-footer-title">
+								<span>About</span>
+								AlphaPlusMedicos</h6>
+							<div class="pm-fat-footer-title-divider"></div>
+
+							<p>
+								<strong>AlphaPlusMedicos PVT. LTD.</strong>
+								is highly progressive health Management Company involved in manufacturing and marketing of branded and generic pharmaceutical formulations. The product portfolio includes highly innovative prescription drugs in various therapeutic areas.
+								AlphaPlusMedicos is currently exporting to Russia &amp; CIS countries. Numbers of dossiers are in pipe line awaiting registrations in South East Asia, African &amp; Latin American countries.
+								<a href="profile.html">View More</a>
+							</p>
+
+						</div>
+
+						<div class="col-lg-4 col-md-4 col-sm-12 pm-widget-footer">
+
+							<h6 class="pm-fat-footer-title">
+								<span>Get</span>
+								in touch</h6>
+							<div class="pm-fat-footer-title-divider"></div>
+
+							<ul class="pm-general-icon-list">
+								<li>
+									<span class="fa fa-home pm-general-icon"></span>
+									<p>
+										<strong>AlphaPlusMedicos PVT. LTD.</strong><br/>
+										-------</p>
+								</li>
+								<li>
+									<span class="fa fa-mobile-phone pm-general-icon"></span>
+									<!--<p>+91-000 000 0000<br/>
+										+91-0000000000 , +91-0000000000</p>-->
+								</li>
+								<li>
+									<span class="fa fa-inbox pm-general-icon"></span>
+									<p>
+										<a href="javascript:void(0);">info@alphaplusmedicos.com</a>
+									</p>
+								</li>
+								<li>
+									<span class="fa fa-globe pm-general-icon"></span>
+									<p>www.alphaplusmedicos.com</p>
+								</li>
+							</ul>
+
+						</div>
+
+						<div class="col-lg-4 col-md-4 col-sm-12 pm-widget-footer">
+
+							<h6 class="pm-fat-footer-title">
+								<span>Face</span>book</h6>
+							<div class="pm-fat-footer-title-divider"></div>
+							<script>
+								(function (d, s, id) {
+									var js,
+										fjs = d.getElementsByTagName(s)[0];
+									if (d.getElementById(id))
+										return;
+									js = d.createElement(s);
+									js.id = id;
+									js.src = "../connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+									fjs.parentNode.insertBefore(js, fjs);
+								}(document, 'script', 'facebook-jssdk'));
+							</script>
+
+							<div class="fb-like-box" data-href="https://www.facebook.com/pages/AlphaPlusMedicos" data-height="300" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<footer style="background:#12131b; border-top:1px solid #313131;">
+				<div class="container" style="text-align:center;">
+					<p style="color:#fff; margin:0px; padding:5px 0px; font-size:13px;">Copyright © 2015 - All Rights Reserved. Powered by
+						<a href="http://www.alphaplusmedicos.com/" target="_blank">Alpha Plus Medicos PVT Ltd</a>
+					</p>
+				</div>
+
+			</footer>
+
+		</div>
+		<!-- /pm_layout-wrapper -->
+
+		<!-- Bootstrap core JavaScript ================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery-2.1.3.min.js"></script>
+		<script src="js/jquery.viewport.mini.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="bootstrap3/js/bootstrap.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/owl-carousel/owl.carousel.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/jquery.tooltip.js"></script>
+		<script src="js/superfish/superfish.js"></script>
+		<script src="js/superfish/hoverIntent.js"></script>
+		<script src="js/stellar/jquery.stellar.js"></script>
+		<script src="js/theme-color-selector/theme-color-selector.js"></script>
+		<script src="js/pulse/jquery.PMSlider.js"></script>
+		<script src="js/meanmenu/jquery.meanmenu.min.js"></script>
+		<script src="js/flexslider/jquery.flexslider.js"></script>
+		<script src="js/jquery.testimonials.js"></script>
+		<script src="js/wow/wow.min.js"></script>
+		<script src="js/jquery-migrate-1.2.1.js"></script>
+		<script src="js/prettyphoto/js/jquery.prettyPhoto.js"></script>
+		<script src="js/tinynav.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/ajax-appointment-form/ajax-appointment-form.js"></script>
+		<!--<script src="js/twitterfetch/twitterfetch.js"></script>-->
+
+		<script src="js/jquery.bxslider.min.js"></script>
+		<p id="P1" class="visible-lg visible-md visible-sm"></p>
+		<script>
+			$('.bxslider').bxSlider({auto: true, autoControls: true});
+		</script>
+
+		<script>
+			// Define your locations: HTML content for the info window, latitude, longitude
+			var locations = [
+				[
+					'<h6>UZBEKISTAN</h6>', 41.0000, 69.0000
+				],
+				[
+					'<h6>TAJIKISTAN</h6>', 38.5500, 68.8000
+				],
+				[
+					'<h6>TURKMENISTAN</h6>', 37.9667, 58.3333
+				],
+				[
+					'<h6>KYRGYZSTAN</h6>', 42.8667, 74.6000
+				],
+				[
+					'<h6>MONGOLIA</h6>', 46.0000, 105.0000
+				],
+				[
+					'<h6>RUSSIA</h6>', 60.0000, 90.0000
+				],
+				[
+					'<h6>BELARUS</h6>', 53.9167, 27.5500
+				],
+				[
+					'<h6>KAZAKHSTAN</h6>', 48.0000, 68.0000
+				],
+				[
+					'<h6>ECUADOR</h6>', -0.7320459, -76.3983011
+				],
+
+				[
+					'<h6>PERU</h6>', -9.1951786, -74.9904165
+				],
+				[
+					'<h6>COSTA RICA</h6>', 9.3592939, -84.0481907
+				],
+				[
+					'<h6>MOZAMBIQUE</h6>', -17.562882, 35.472404
+				],
+				[
+					'<h6>ZAMBIA</h6>', -13.140351, 27.8541907
+				],
+				[
+					'<h6>BOTSWANA</h6>', -22.342841, 24.6871035
+				],
+				[
+					'<h6>IVORY COAST</h6>', 7.5455351, -5.547545
+				],
+				[
+					'<h6>MYANMAR</h6>', 19.0734474, 96.6710399
+				],
+				[
+					'<h6>FIJI</h6>', -17.7478445, 178.1486857
+				],
+				[
+					'<h6>PHILIPPINES</h6>', 11.6978351, 122.6217543
+				],
+				[
+					'<h6>CAMBODIA</h6>', 11.9879666, 104.9806145
+				]
+			];
+
+			// Setup the different icons and shadows
+			var iconURLPrefix = 'http://maps.google.com/mapfiles/ms/icons/';
+
+			var icons = [
+				<!--iconURLPrefix + 'red-dot.png',
+				iconURLPrefix + 'blue-dot.png',
+				iconURLPrefix + 'blue-dot.png',
+				iconURLPrefix + 'blue-dot.png',
+				iconURLPrefix + 'blue-dot.png',
+				iconURLPrefix + 'blue-dot.png',
+				iconURLPrefix + 'blue-dot.png',
+				iconURLPrefix + 'blue-dot.png',
+				iconURLPrefix + 'blue-dot.png',
+				iconURLPrefix + 'blue-dot.png',
+				iconURLPrefix + 'red-dot.png',
+				iconURLPrefix + 'red-dot.png',
+				iconURLPrefix + 'red-dot.png',
+				iconURLPrefix + 'red-dot.png',
+				iconURLPrefix + 'red-dot.png',
+				iconURLPrefix + 'red-dot.png',
+				iconURLPrefix + 'red-dot.png',
+				iconURLPrefix + 'red-dot.png',
+				iconURLPrefix + 'red-dot.png',
+				iconURLPrefix + 'red-dot.png'
+			]
+			var iconsLength = icons.length;
+
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 20,
+				center: new google.maps.LatLng(-37.92, 151.25),
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				mapTypeControl: false,
+				streetViewControl: false,
+				panControl: false,
+				zoomControl: false,
+				scrollwheel: false,
+				scaleControl: false,
+				zoomControlOptions: {
+					position: google.maps.ControlPosition.LEFT_BOTTOM
+				}
+			});
+
+			var infowindow = new google.maps.InfoWindow({
+				maxWidth: 200
+			});
+
+			var markers = new Array();
+
+			var iconCounter = 0;
+
+			// Add the markers and infowindows to the map
+			for (var i = 0; i < locations.length; i++) {
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+					map: map,
+					icon: icons[iconCounter]
+				});
+
+				markers.push(marker);
+
+				google.maps.event.addListener(marker, 'click', (function(marker, i) {
+					return function() {
+						infowindow.setContent(locations[i][0]);
+						infowindow.open(map, marker);
+					}
+				})(marker, i));
+
+				iconCounter++;
+				// We only have a limited number of possible icon colors, so we may have to restart the counter
+				if (iconCounter >= iconsLength) {
+					iconCounter = 0;
+				}
+			}
+
+			function autoCenter() {
+				//  Create a new viewpoint bound
+				var bounds = new google.maps.LatLngBounds();
+				//  Go through each...
+				for (var i = 0; i < markers.length; i++) {
+					bounds.extend(markers[i].position);
+				}
+				//  Fit these bounds to the map
+				map.fitBounds(bounds);
+			}
+			autoCenter();
+		</script>
+
+		<p id="back-top" class="visible-lg visible-md visible-sm"></p>
+
+		<script type="text/javascript">
+			//<![CDATA[
+			var Page_ValidationSummaries = new Array(document.getElementById("ContentPlaceHolder1_ValidationSummary1"));
+			var Page_Validators = new Array(
+				document.getElementById("ContentPlaceHolder1_RequiredFieldValidator2"),
+				document.getElementById("ContentPlaceHolder1_RequiredFieldValidator1"),
+				document.getElementById("ContentPlaceHolder1_RequiredFieldValidator5"),
+				document.getElementById("ContentPlaceHolder1_RegularExpressionValidator1"),
+				document.getElementById("ContentPlaceHolder1_RequiredFieldValidator4"),
+				document.getElementById("ContentPlaceHolder1_RegularExpressionValidator4"),
+				document.getElementById("ContentPlaceHolder1_RequiredFieldValidator3")
+			);
+
+			//]]>
+		</script>
+
+		<script type="text/javascript">
+			//<![CDATA[
+			var ContentPlaceHolder1_RequiredFieldValidator2 = document.all
+				? document.all["ContentPlaceHolder1_RequiredFieldValidator2"]
+				: document.getElementById("ContentPlaceHolder1_RequiredFieldValidator2");
+			ContentPlaceHolder1_RequiredFieldValidator2.controltovalidate = "ContentPlaceHolder1_txt_name";
+			ContentPlaceHolder1_RequiredFieldValidator2.errormessage = "Please Enter First Name!!!";
+			ContentPlaceHolder1_RequiredFieldValidator2.display = "Dynamic";
+			ContentPlaceHolder1_RequiredFieldValidator2.validationGroup = "gi";
+			ContentPlaceHolder1_RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+			ContentPlaceHolder1_RequiredFieldValidator2.initialvalue = "";
+			var ContentPlaceHolder1_RequiredFieldValidator1 = document.all
+				? document.all["ContentPlaceHolder1_RequiredFieldValidator1"]
+				: document.getElementById("ContentPlaceHolder1_RequiredFieldValidator1");
+			ContentPlaceHolder1_RequiredFieldValidator1.controltovalidate = "ContentPlaceHolder1_txt_last_name";
+			ContentPlaceHolder1_RequiredFieldValidator1.errormessage = "Please Enter Last Name!!!";
+			ContentPlaceHolder1_RequiredFieldValidator1.display = "Dynamic";
+			ContentPlaceHolder1_RequiredFieldValidator1.validationGroup = "gi";
+			ContentPlaceHolder1_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+			ContentPlaceHolder1_RequiredFieldValidator1.initialvalue = "";
+			var ContentPlaceHolder1_RequiredFieldValidator5 = document.all
+				? document.all["ContentPlaceHolder1_RequiredFieldValidator5"]
+				: document.getElementById("ContentPlaceHolder1_RequiredFieldValidator5");
+			ContentPlaceHolder1_RequiredFieldValidator5.controltovalidate = "ContentPlaceHolder1_txt_email_address";
+			ContentPlaceHolder1_RequiredFieldValidator5.errormessage = "Please Enter Email Address!!!";
+			ContentPlaceHolder1_RequiredFieldValidator5.display = "Dynamic";
+			ContentPlaceHolder1_RequiredFieldValidator5.validationGroup = "gi";
+			ContentPlaceHolder1_RequiredFieldValidator5.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+			ContentPlaceHolder1_RequiredFieldValidator5.initialvalue = "";
+			var ContentPlaceHolder1_RegularExpressionValidator1 = document.all
+				? document.all["ContentPlaceHolder1_RegularExpressionValidator1"]
+				: document.getElementById("ContentPlaceHolder1_RegularExpressionValidator1");
+			ContentPlaceHolder1_RegularExpressionValidator1.controltovalidate = "ContentPlaceHolder1_txt_email_address";
+			ContentPlaceHolder1_RegularExpressionValidator1.errormessage = "Invalid Email Address. !!!";
+			ContentPlaceHolder1_RegularExpressionValidator1.display = "Dynamic";
+			ContentPlaceHolder1_RegularExpressionValidator1.validationGroup = "gi";
+			ContentPlaceHolder1_RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+			ContentPlaceHolder1_RegularExpressionValidator1.validationexpression = "\\w+([-+.\']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+			var ContentPlaceHolder1_RequiredFieldValidator4 = document.all
+				? document.all["ContentPlaceHolder1_RequiredFieldValidator4"]
+				: document.getElementById("ContentPlaceHolder1_RequiredFieldValidator4");
+			ContentPlaceHolder1_RequiredFieldValidator4.controltovalidate = "ContentPlaceHolder1_txt_phone_number";
+			ContentPlaceHolder1_RequiredFieldValidator4.errormessage = "Please Enter Phone Number!!!";
+			ContentPlaceHolder1_RequiredFieldValidator4.display = "Dynamic";
+			ContentPlaceHolder1_RequiredFieldValidator4.validationGroup = "gi";
+			ContentPlaceHolder1_RequiredFieldValidator4.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+			ContentPlaceHolder1_RequiredFieldValidator4.initialvalue = "";
+			var ContentPlaceHolder1_RegularExpressionValidator4 = document.all
+				? document.all["ContentPlaceHolder1_RegularExpressionValidator4"]
+				: document.getElementById("ContentPlaceHolder1_RegularExpressionValidator4");
+			ContentPlaceHolder1_RegularExpressionValidator4.controltovalidate = "ContentPlaceHolder1_txt_phone_number";
+			ContentPlaceHolder1_RegularExpressionValidator4.errormessage = "Please Enter 10 digits valid mobile number";
+			ContentPlaceHolder1_RegularExpressionValidator4.display = "Dynamic";
+			ContentPlaceHolder1_RegularExpressionValidator4.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+			ContentPlaceHolder1_RegularExpressionValidator4.validationexpression = "[0-9]{10}";
+			var ContentPlaceHolder1_RequiredFieldValidator3 = document.all
+				? document.all["ContentPlaceHolder1_RequiredFieldValidator3"]
+				: document.getElementById("ContentPlaceHolder1_RequiredFieldValidator3");
+			ContentPlaceHolder1_RequiredFieldValidator3.controltovalidate = "ContentPlaceHolder1_txt_description";
+			ContentPlaceHolder1_RequiredFieldValidator3.errormessage = "Please Enter Message!!!";
+			ContentPlaceHolder1_RequiredFieldValidator3.display = "Dynamic";
+			ContentPlaceHolder1_RequiredFieldValidator3.validationGroup = "gi";
+			ContentPlaceHolder1_RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+			ContentPlaceHolder1_RequiredFieldValidator3.initialvalue = "";
+			var ContentPlaceHolder1_ValidationSummary1 = document.all
+				? document.all["ContentPlaceHolder1_ValidationSummary1"]
+				: document.getElementById("ContentPlaceHolder1_ValidationSummary1");
+			ContentPlaceHolder1_ValidationSummary1.showmessagebox = "True";
+			ContentPlaceHolder1_ValidationSummary1.showsummary = "False";
+			ContentPlaceHolder1_ValidationSummary1.validationGroup = "gi";
+
+			//]]>
+		</script>
+
+		<script type="text/javascript">
+			//<![CDATA[
+			var Page_ValidationActive = false;
+			if (typeof(ValidatorOnLoad) == "function") {
+				ValidatorOnLoad();
+			}
+
+			function ValidatorOnSubmit() {
+				if (Page_ValidationActive) {
+					return ValidatorCommonOnSubmit();
+				} else {
+					return true;
+				}
+			}
+
+			//]]>
+		</script>
+	</form>
 </body>
-
 
 </html>
